@@ -18,7 +18,7 @@ typography:
     letterSpacing: "-0.045em"
   body:
     fontFamily: "DM Sans, Helvetica Neue, Arial, sans-serif"
-    fontSize: "16px"
+    fontSize: "17px"
     fontWeight: 400
     lineHeight: 1.5
   label:
@@ -105,7 +105,7 @@ La paleta mantiene dos tintas estructurales y suma una señal azafrán: el azul 
 - **Display** (600, `clamp(4.2rem, 10.3vw, 10.2rem)`, 0.82): titulares de apertura y cierre, con tracking negativo hasta `-0.045em`.
 - **Headline** (500, `clamp(3rem, 6.6vw, 7.1rem)`, 0.86): encabezados de sección y tesis.
 - **Title** (600, `clamp(2.4rem, 5vw, 5.5rem)`, 0.85): nombres de perfiles dentro de la cartelera.
-- **Body** (400, 16px, 1.5): explicación y evidencia, en medidas cortas de aproximadamente 65–75ch.
+- **Body** (400, 17px, 1.5): explicación y evidencia, en medidas cortas de aproximadamente 65–75ch.
 - **Label** (600, 0.72rem, 0.08em, uppercase): metadatos, estado y navegación secundaria.
 
 **The Headline-First Rule.** Los bloques entran por su titular; no usar etiquetas tipo eyebrow antes de una cabeza para fabricar jerarquía.

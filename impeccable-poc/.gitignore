@@ -1,6 +1,9 @@
 # build output
 dist/
 
+# Impeccable local state
+.impeccable/
+
 # generated types
 .astro/
 

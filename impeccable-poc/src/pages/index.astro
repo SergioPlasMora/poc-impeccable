@@ -1,11 +1,291 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<a class="skip-link" href="#contenido">Saltar al contenido</a>
+	<div class="site-frame">
+		<header class="site-header">
+			<a class="wordmark" href="/" aria-label="Estela, inicio">Estela<span class="wordmark-dot">.</span></a>
+			<nav aria-label="Navegación principal">
+				<a href="#catalogo">Selección</a>
+				<a href="#como-funciona">Cómo funciona</a>
+				<a href="#trazabilidad">Trazabilidad</a>
+			</nav>
+			<a class="header-action" href="#catalogo">Ver decants <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a>
+		</header>
+
+		<main id="contenido">
+			<section class="hero" aria-labelledby="hero-title">
+				<div class="hero-copy">
+					<h1 id="hero-title">Conoce el perfume antes de comprarlo<span class="hero-mark">.</span></h1>
+					<p class="hero-lede">Prueba en tu piel la salida, el corazón y el fondo. Sin apostar el precio completo por un perfume que quizá no vuelva a salir de la repisa.</p>
+					<div class="hero-actions">
+						<a class="button button-ink" href="#catalogo">Explorar la selección <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 3 10 10m0 0V5m0 8H5" /></svg></a>
+						<a class="text-link" href="#como-funciona">Entender el decant <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v11m0 0 4-4m-4 4L4 9" /></svg></a>
+					</div>
+				</div>
+				<div class="hero-poster" aria-label="Marcador de prueba en piel">
+					<div class="poster-rule"></div>
+					<p class="poster-label">La prueba que sí cuenta</p>
+					<p class="poster-number">Varios días</p>
+					<p class="poster-unit">de prueba para conocer<br />su evolución en piel</p>
+					<div class="poster-footer"><span>piel propia</span><span>clima real</span><span>decisión informada</span></div>
+				</div>
+			</section>
+
+			<section class="manifesto" aria-labelledby="manifesto-title">
+				<div class="manifesto-lead">
+					<h2 id="manifesto-title">Un papel no te dice cómo termina.</h2>
+				</div>
+				<div class="manifesto-copy">
+					<p>En tienda, una prueba de treinta segundos en tienda tiene que convencerte rápido. Estela te da el tiempo que el perfume necesita para hablar: aplícalo, úsalo en tu rutina y decide con información real.</p>
+					<p>La compra empieza en 5 ml o 10 ml. Si vuelve a tu piel, entonces sí: el frasco completo tiene sentido.</p>
+				</div>
+			</section>
+
+			<section class="catalogue" id="catalogo" aria-labelledby="catalogue-title">
+				<div class="section-heading">
+					<div>
+						<h2 id="catalogue-title">Empieza por cómo quieres usarlo.</h2>
+					</div>
+					<p class="heading-note">Perfiles para probar.<br />El catálogo real se integra aquí.</p>
+				</div>
+
+				<div class="scent-list" aria-label="Perfiles de prueba de ejemplo">
+					<article class="scent-row">
+						<div class="scent-rank" aria-hidden="true">A</div>
+						<div class="scent-main">
+							<h3>Cítrico limpio</h3>
+							<p>La ruta para oficina, calor y días que piden algo fácil de llevar.</p>
+						</div>
+						<div class="scent-meta"><span>5 ml · 10 ml</span><span>salida luminosa</span></div>
+						<a class="row-arrow" href="#trazabilidad" aria-label="Conocer la trazabilidad de Cítrico limpio"><svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a>
+					</article>
+					<article class="scent-row scent-row-featured">
+						<div class="scent-rank" aria-hidden="true">B</div>
+						<div class="scent-main">
+							<h3>Madera seca</h3>
+							<p>Una prueba para entender cuánto cambia cuando el aire se calienta.</p>
+						</div>
+						<div class="scent-meta"><span>5 ml · 10 ml</span><span>fondo persistente*</span></div>
+						<a class="row-arrow" href="#trazabilidad" aria-label="Conocer la trazabilidad de Madera seca"><svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a>
+					</article>
+					<article class="scent-row">
+						<div class="scent-rank" aria-hidden="true">C</div>
+						<div class="scent-main">
+							<h3>Ámbar nocturno</h3>
+							<p>Para probar en calma: salida, corazón y fondo sin decidir por la primera impresión.</p>
+						</div>
+						<div class="scent-meta"><span>5 ml · 10 ml</span><span>presencia cálida*</span></div>
+						<a class="row-arrow" href="#trazabilidad" aria-label="Conocer la trazabilidad de Ámbar nocturno"><svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a>
+					</article>
+				</div>
+				<p class="catalogue-footnote">* La duración y la proyección dependen de piel, clima y aplicación. Estos perfiles son una prueba en tienda de cómo se organizará el catálogo.</p>
+			</section>
+
+			<section class="process" id="como-funciona" aria-labelledby="process-title">
+				<div class="process-intro">
+					<h2 id="process-title">Tres pasos.<br /><em>Cero apuestas ciegas.</em></h2>
+				</div>
+				<ol class="process-list">
+					<li>
+						<span class="process-letter" aria-hidden="true">I</span>
+						<div><h3>Elige el decant</h3><p>Parte de una reseña, una nota o una casa que quieras conocer.</p></div>
+					</li>
+					<li>
+						<span class="process-letter" aria-hidden="true">II</span>
+						<div><h3>Úsalo varios días</h3><p>Prueba la evolución en tu piel, tu clima y tu horario real.</p></div>
+					</li>
+					<li>
+						<span class="process-letter" aria-hidden="true">III</span>
+						<div><h3>Decide con criterio</h3><p>Si regresa a tu muñeca, el frasco completo deja de ser una apuesta.</p></div>
+					</li>
+				</ol>
+			</section>
+
+			<section class="passport" id="trazabilidad" aria-labelledby="passport-title">
+				<div class="passport-copy">
+					<h2 id="passport-title">El líquido importa.<br /><em>Lo que sabemos de él también.</em></h2>
+					<p>El catálogo de Estela no solo dice a qué huele. Cada decant declara de dónde salió y cuándo fue llenado, para que la confianza no dependa de una promesa.</p>
+					<a class="button button-ink" href="#catalogo">Ver la selección <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a>
+				</div>
+				<div class="passport-card" aria-label="Ejemplo de pasaporte de trazabilidad, datos por confirmar">
+					<div class="passport-top"><span>Pasaporte del decant</span><span>ESTELA / [por confirmar]</span></div>
+					<div class="passport-name">Perfil de ejemplo</div>
+					<dl>
+						<div><dt>Origen</dt><dd>[por confirmar]</dd></div>
+						<div><dt>Lote</dt><dd>[por confirmar]</dd></div>
+						<div><dt>Fecha de llenado</dt><dd>[por confirmar]</dd></div>
+						<div><dt>Volumen</dt><dd>5 ml / 10 ml</dd></div>
+					</dl>
+					<div class="passport-bar"><span>trazabilidad visible</span><span class="passport-spark" aria-hidden="true"></span></div>
+				</div>
+			</section>
+
+			<section class="closing" aria-labelledby="closing-title">
+				<h2 id="closing-title">No compres el frasco todavía<span class="hero-mark">.</span></h2>
+				<a class="button button-ink button-large" href="#catalogo">Explorar decants <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<span>Estela · decants de perfume</span>
+			<span>Hecho para probar con calma</span>
+		</footer>
+	</div>
 </Layout>
+
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+	:root {
+		--ink: #f4f0e6;
+		--ink-soft: #d9d8ce;
+		--blue: #1726b8;
+		--blue-deep: #111b8d;
+		--line: rgba(244, 240, 230, 0.38);
+		--font-display: 'Archivo Narrow', 'Arial Narrow', Arial, sans-serif;
+		--font-body: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+		--space: clamp(1.25rem, 2.6vw, 2.75rem);
+	}
+
+	* { box-sizing: border-box; }
+	html { scroll-behavior: smooth; }
+	body {
+		background: var(--blue);
+		color: var(--ink);
+		font-family: var(--font-body);
+		font-size: 16px;
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+	}
+	a { color: inherit; }
+	:focus-visible { outline: 3px solid var(--ink); outline-offset: 5px; }
+	.skip-link {
+		position: fixed; left: 1rem; top: 1rem; z-index: 20; padding: 0.75rem 1rem;
+		background: var(--ink); color: var(--blue); transform: translateY(-150%); transition: transform 180ms ease-out;
+	}
+	.skip-link:focus { transform: translateY(0); }
+	.site-frame { overflow: hidden; }
+	.site-header, main > section, .site-footer {
+		width: min(100%, 92rem);
+		margin-inline: auto;
+		padding-inline: var(--space);
+	}
+	.site-header {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		align-items: center;
+		gap: 1.5rem;
+		min-height: 5.5rem;
+		border-bottom: 1px solid var(--line);
+	}
+	.wordmark { font: 700 1.65rem/1 var(--font-display); letter-spacing: -0.03em; text-decoration: none; }
+	.wordmark-dot, .hero-mark { color: var(--ink); }
+	nav { display: flex; gap: clamp(1rem, 2.5vw, 2.5rem); justify-content: center; }
+	nav a, .header-action, .text-link, .poster-label, .poster-footer, .scent-meta, .catalogue-footnote, .passport-top, dt, .passport-bar, .site-footer {
+		font-size: 0.72rem; line-height: 1.1; letter-spacing: 0.08em; text-transform: uppercase;
+	}
+	nav a, .header-action, .text-link { text-decoration: none; font-weight: 600; }
+	nav a, .header-action, .text-link, .row-arrow, .button { transition: background-color 180ms ease-out, color 180ms ease-out, transform 180ms ease-out; }
+	nav a:hover, .text-link:hover { text-decoration: underline; text-underline-offset: 0.3rem; }
+	.header-action { justify-self: end; padding: 0.75rem 0.9rem; border: 1px solid var(--line); }
+	.header-action:hover { background: var(--ink); color: var(--blue); }
+
+	.hero { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(18rem, 0.75fr); gap: clamp(2rem, 7vw, 8rem); min-height: min(47rem, calc(100vh - 5.5rem)); align-items: center; padding-top: clamp(3.5rem, 8vw, 8rem); padding-bottom: clamp(4rem, 9vw, 9rem); }
+	.hero-copy { max-width: 56rem; }
+	.hero h1, h2, h3, p { margin-top: 0; }
+	.hero h1 { max-width: 8.5ch; margin-bottom: 2rem; font: 600 clamp(4.2rem, 10.3vw, 10.2rem)/0.82 var(--font-display); letter-spacing: -0.045em; }
+	.hero-lede { max-width: 42rem; margin-bottom: 2.25rem; color: var(--ink-soft); font-size: clamp(1.05rem, 1.8vw, 1.35rem); line-height: 1.45; }
+	.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.25rem 1.75rem; }
+	.button { display: inline-flex; align-items: center; gap: 1.3rem; padding: 1rem 1.15rem; background: var(--ink); color: var(--blue); font-weight: 700; text-decoration: none; }
+	.arrow-icon { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; }
+	.button:hover { background: var(--blue-deep); color: var(--ink); transform: translateY(-2px); }
+	.button-large { padding: 1.15rem 1.4rem; font-size: 1rem; }
+	.text-link { padding-block: 0.85rem; }
+	.hero-poster { align-self: stretch; display: flex; flex-direction: column; justify-content: center; padding: clamp(1.25rem, 3vw, 2.5rem); border: 1px solid var(--line); animation: poster-reveal 900ms cubic-bezier(0.16, 1, 0.3, 1) both; }
+	.poster-rule { width: 100%; height: 0.6rem; margin-bottom: 1.4rem; background: var(--ink); }
+	.poster-label { margin-bottom: 2.8rem; color: var(--ink-soft); }
+	.poster-number { margin: 0; font: 600 clamp(3.2rem, 6.5vw, 6rem)/0.88 var(--font-display); letter-spacing: -0.04em; }
+	.poster-unit { margin: 1.2rem 0 3.5rem; font-size: clamp(1.05rem, 1.5vw, 1.25rem); line-height: 1.25; }
+	.poster-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem; padding-top: 0.85rem; border-top: 1px solid var(--line); color: var(--ink-soft); }
+
+	.manifesto, .passport { display: grid; grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.8fr); gap: clamp(2rem, 10vw, 12rem); padding-top: clamp(5rem, 12vw, 12rem); padding-bottom: clamp(5rem, 12vw, 12rem); border-top: 1px solid var(--line); }
+	.manifesto h2, .section-heading h2, .process h2, .passport h2, .closing h2 { max-width: 10ch; margin-bottom: 0; font: 500 clamp(3rem, 6.6vw, 7.1rem)/0.86 var(--font-display); letter-spacing: -0.04em; }
+	.manifesto-copy { max-width: 38rem; align-self: end; color: var(--ink-soft); font-size: clamp(1.05rem, 1.4vw, 1.25rem); }
+	.manifesto-copy p + p { margin-top: 1.5rem; }
+
+	.catalogue { padding-top: clamp(5rem, 10vw, 10rem); padding-bottom: clamp(5rem, 11vw, 11rem); }
+	.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; padding-bottom: 3rem; }
+	.heading-note { flex: 0 0 12rem; margin-bottom: 0.45rem; color: var(--ink-soft); font-size: 0.8rem; line-height: 1.35; text-align: right; }
+	.scent-list { border-top: 1px solid var(--line); }
+	.scent-row { display: grid; grid-template-columns: 3.5rem minmax(0, 1.45fr) minmax(11rem, 0.7fr) 2.5rem; align-items: center; gap: 1.25rem; min-height: 10.5rem; padding-block: 1.35rem; border-bottom: 1px solid var(--line); }
+	.scent-row-featured { background: var(--ink); color: var(--blue); padding-inline: 1.25rem; margin-inline: -1.25rem; }
+	.scent-rank { font: 500 2.5rem/1 var(--font-display); }
+	.scent-main h3 { margin-bottom: 0.4rem; font: 600 clamp(2.4rem, 5vw, 5.5rem)/0.85 var(--font-display); letter-spacing: -0.035em; }
+	.scent-main p { max-width: 32rem; margin-bottom: 0; color: var(--ink-soft); font-size: 0.92rem; }
+	.scent-row-featured .scent-main p, .scent-row-featured .scent-meta { color: rgba(23, 38, 184, 0.72); }
+	.scent-meta { display: grid; gap: 0.6rem; color: var(--ink-soft); text-align: right; }
+	.row-arrow { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border: 1px solid var(--line); font-size: 1.1rem; text-decoration: none; }
+	.row-arrow:hover { background: var(--ink); color: var(--blue); transform: rotate(8deg); }
+	.scent-row-featured .row-arrow { border-color: rgba(23, 38, 184, 0.35); }
+	.catalogue-footnote { max-width: 46rem; margin: 1.5rem 0 0 4.75rem; color: var(--ink-soft); line-height: 1.5; text-transform: none; letter-spacing: 0; }
+
+	.process { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(22rem, 1.1fr); gap: clamp(2rem, 9vw, 10rem); padding-top: clamp(5rem, 11vw, 11rem); padding-bottom: clamp(5rem, 11vw, 11rem); border-top: 1px solid var(--line); }
+	.process h2 em, .passport h2 em { font-style: normal; color: var(--ink-soft); }
+	.process-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+	.process-list li { display: grid; grid-template-columns: 3.5rem 1fr; gap: 1.5rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+	.process-letter { font: 500 2.5rem/0.9 var(--font-display); }
+	.process-list h3 { margin-bottom: 0.45rem; font: 600 2.35rem/0.9 var(--font-display); }
+	.process-list p { max-width: 28rem; margin-bottom: 0; color: var(--ink-soft); }
+
+	.passport { align-items: center; }
+	.passport-copy { max-width: 42rem; }
+	.passport-copy > p:not(.section-label) { max-width: 35rem; margin: 2rem 0; color: var(--ink-soft); font-size: 1.05rem; }
+	.passport-card { padding: clamp(1.25rem, 3vw, 2rem); background: var(--ink); color: var(--blue); }
+	.passport-top, .passport-bar { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(23, 38, 184, 0.35); font-size: 0.65rem; }
+	.passport-name { margin: 3.8rem 0 3.5rem; font: 600 clamp(2.5rem, 5vw, 5rem)/0.85 var(--font-display); letter-spacing: -0.04em; }
+	.passport-card dl { margin: 0 0 3rem; }
+	.passport-card dl > div { display: flex; justify-content: space-between; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid rgba(23, 38, 184, 0.2); }
+	.passport-card dt, .passport-card dd { margin: 0; font-size: 0.72rem; }
+	.passport-card dd { text-align: right; }
+	.passport-bar { padding-top: 1rem; padding-bottom: 0; border-bottom: 0; }
+	.passport-spark { width: 0.8rem; height: 0.8rem; background: currentColor; clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%); }
+
+	.closing { display: flex; flex-direction: column; align-items: flex-start; padding-top: clamp(6rem, 14vw, 14rem); padding-bottom: clamp(6rem, 14vw, 14rem); border-top: 1px solid var(--line); }
+	.closing h2 { max-width: 9ch; margin-bottom: 2.5rem; }
+	.site-footer { display: flex; justify-content: space-between; gap: 1rem; padding-top: 1.25rem; padding-bottom: 1.25rem; border-top: 1px solid var(--line); color: var(--ink-soft); }
+
+	@keyframes poster-reveal { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0); } }
+	@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .hero-poster { animation: none; } * { transition-duration: 0.01ms !important; } }
+	@media (max-width: 780px) {
+		.site-header { grid-template-columns: 1fr auto; min-height: 4.75rem; }
+		nav { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; order: 3; padding-bottom: 1rem; overflow-x: auto; }
+		.header-action { font-size: 0.65rem; }
+		.hero { grid-template-columns: 1fr; min-height: auto; padding-top: 4rem; }
+		.hero h1 { max-width: 10ch; font-size: clamp(4.2rem, 18vw, 7.2rem); }
+		.hero-poster { min-height: 23rem; }
+		.manifesto, .passport, .process { grid-template-columns: 1fr; gap: 3.5rem; }
+		.manifesto h2, .section-heading h2, .process h2, .passport h2, .closing h2 { font-size: clamp(3.6rem, 14vw, 6rem); }
+		.section-heading { display: block; }
+		.heading-note { margin-top: 1.5rem; text-align: left; }
+		.scent-row { grid-template-columns: 2.4rem minmax(0, 1fr) 2.5rem; gap: 0.85rem; min-height: 9.5rem; }
+		.scent-meta { grid-column: 2; grid-row: 2; display: flex; flex-wrap: wrap; text-align: left; gap: 0.5rem 1rem; font-size: 0.62rem; }
+		.scent-main h3 { font-size: clamp(2.8rem, 12vw, 4.5rem); }
+		.scent-row-featured { padding-inline: 0.75rem; margin-inline: -0.75rem; }
+		.catalogue-footnote { margin-left: 0; }
+		.process-list h3 { font-size: 2.15rem; }
+		.passport-card { margin-top: 0.5rem; }
+		.site-footer { display: block; line-height: 1.8; }
+	}
+	@media (max-width: 440px) {
+		.site-header { gap: 0.75rem; }
+		nav { gap: 1rem; }
+		.header-action { padding-inline: 0.65rem; }
+		.hero { padding-top: 3rem; }
+		.poster-number { font-size: 7.2rem; }
+		.scent-row { grid-template-columns: 1.8rem minmax(0, 1fr) 2.2rem; }
+		.scent-rank { font-size: 1.8rem; }
+	}
+</style>

@@ -4,9 +4,11 @@ description: Cartelera olfativa para probar decants antes del frasco completo.
 colors:
   primary: "#1726b8"
   primary-deep: "#111b8d"
+  signal: "#f2b134"
   ink: "#f4f0e6"
   ink-soft: "#d9d8ce"
   line: "rgba(244, 240, 230, 0.38)"
+  line-signal: "rgba(23, 38, 184, 0.38)"
 typography:
   display:
     fontFamily: "Archivo Narrow, Arial Narrow, Arial, sans-serif"
@@ -44,7 +46,7 @@ components:
     textColor: "{colors.ink}"
     padding: "1.35rem 0"
   catalogue-row-featured:
-    backgroundColor: "{colors.ink}"
+    backgroundColor: "{colors.signal}"
     textColor: "{colors.primary}"
     padding: "1.35rem 1.25rem"
   passport:
@@ -59,33 +61,36 @@ components:
 
 **Creative North Star: “La cartelera olfativa”**
 
-Estela se expresa como una hoja de lineup que se lee desde lejos: una tinta dominante, una tinta de contraste y una jerarquía tipográfica que hace que el producto se entienda antes de adornarlo. La superficie usa azul ultramar como campo continuo y marfil como voz; la página se siente impresa, directa y segura, no perfumada ni aspiracional.
+Estela se expresa como una hoja de lineup que se lee desde lejos: una tinta dominante, una tinta de contraste, una señal azafrán y una jerarquía tipográfica que hace que el producto se entienda antes de adornarlo. La superficie usa azul ultramar como campo continuo, marfil como voz y azafrán solo donde una prueba o una recomendación necesita tomar el frente; la página se siente impresa, directa y segura, no perfumada ni aspiracional.
 
 El sistema se apoya en tipografía condensada para nombres, titulares y marcadores, y en una sans de lectura para explicar notas, clima y trazabilidad. Las filas, reglas finas y cambios de escala hacen visible la clasificación sin llenar la pantalla de tarjetas. El pasaporte del decant es la firma funcional: la confianza se muestra con campos concretos.
 
 **Key Characteristics:**
 
 - Una superficie azul continua con tinta marfil de alto contraste.
+- Una señal azafrán reservada para prueba, recomendación y puntuación visual.
 - Jerarquía por escala y saltos de línea, no por imágenes o adornos.
 - Filas editoriales con una sola variación invertida para señalar énfasis.
 - Geometría CSS y tipografía como contenido; fotografía omitida cuando no es real.
 
 ## Colors
 
-La paleta es deliberadamente de dos tintas: el azul lleva el campo y el marfil lleva la información. El azul profundo solo aparece en estados de interacción.
+La paleta mantiene dos tintas estructurales y suma una señal azafrán: el azul lleva el campo, el marfil lleva la información y el azafrán marca lo que merece una segunda mirada. El azul profundo solo aparece en estados de interacción.
 
 ### Primary
 
 - **Azul ultramar** (#1726b8): superficie principal, texto sobre tinta clara y ancla de la marca.
 - **Azul profundo** (#111b8d): estado hover de acciones y profundidad tonal sin introducir otro color.
+- **Azafrán de señal** (#f2b134): marcador de prueba, fila recomendada, puntuación de trazabilidad y puntuación final de marca.
 
 ### Neutral
 
 - **Marfil de impresión** (#f4f0e6): texto principal, CTA, fila destacada y pasaporte.
 - **Marfil suave** (#d9d8ce): texto secundario en el campo azul.
 - **Regla translúcida** (rgba(244, 240, 230, 0.38)): separadores estructurales y bordes de control.
+- **Regla sobre azafrán** (rgba(23, 38, 184, 0.38)): separadores dentro de superficies azafrán.
 
-**The Two-Ink Rule.** No añadir colores de categoría, degradados ni acentos decorativos: la jerarquía vive en escala, peso, inversión y espacio.
+**The Signal Rule.** El azafrán aparece en regiones con una función clara —prueba, recomendación o trazabilidad—; no se dispersa como confeti decorativo.
 
 ## Typography
 
@@ -113,7 +118,7 @@ Las secciones alternan composición de dos columnas y listas de ancho completo. 
 
 ## Elevation & Depth
 
-El sistema es plano por defecto: no usa sombras ni glass. La profundidad se comunica por continuidad del campo azul, inversión marfil en la fila destacada y separación mediante reglas de 1px. El único gesto de movimiento con peso es la revelación vertical del marcador de prueba en la primera pantalla.
+El sistema es plano por defecto: no usa sombras ni glass. La profundidad se comunica por continuidad del campo azul, inversión marfil o azafrán en la fila destacada y separación mediante reglas de 1px. El único gesto de movimiento con peso es la revelación vertical del marcador de prueba en la primera pantalla.
 
 **The Flat-By-Default Rule.** Una superficie gana jerarquía por tono, tipografía y separación; no por cajas flotantes.
 
@@ -152,6 +157,7 @@ La navegación es una línea de enlaces centrada entre la palabra-marca y el CTA
 - **Do** usar contenido real de catálogo y trazabilidad cuando esté disponible.
 - **Do** mantener el español de México y la terminología de decants, estela, proyección y longevidad.
 - **Do** conservar contraste WCAG AA y el comportamiento móvil como criterio de acabado.
+- **Do** usar el azafrán para orientar una decisión, no para competir con el CTA principal.
 
 ### Don't:
 
@@ -159,3 +165,4 @@ La navegación es una línea de enlaces centrada entre la palabra-marca y el CTA
 - **Don't** usar nombres, logos o imágenes de marcas de diseñador para vender una interpretación.
 - **Don't** prometer duración, proyección o equivalencia absoluta.
 - **Don't** volver a un sistema de tarjetas iguales con icono, título y párrafo como estructura de página.
+- **Don't** repartir el azafrán en cada enlace, borde o etiqueta hasta volverlo ruido.

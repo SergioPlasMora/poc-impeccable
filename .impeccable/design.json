@@ -6,6 +6,7 @@
     "colorMeta": {
       "primary": { "role": "primary", "displayName": "Azul ultramar", "canonical": "#1726b8", "tonalRamp": ["#090d3b", "#0d1462", "#111b8d", "#1726b8", "#3b4bd0", "#6875e2", "#9ca5ed", "#d9dcf8"] },
       "primary-deep": { "role": "primary", "displayName": "Azul profundo", "canonical": "#111b8d", "tonalRamp": ["#070a2d", "#0b1158", "#111b8d", "#2735af", "#4d5bd0", "#7680de", "#a5abe9", "#dbddf8"] },
+      "signal": { "role": "primary", "displayName": "Azafrán de señal", "canonical": "#f2b134", "tonalRamp": ["#4b3003", "#795106", "#a9730e", "#f2b134", "#f5c65b", "#f7d37d", "#f9e2a8", "#fcf3dc"] },
       "ink": { "role": "neutral", "displayName": "Marfil de impresión", "canonical": "#f4f0e6", "tonalRamp": ["#24231f", "#4a4944", "#706f68", "#97958b", "#b7b5aa", "#d0cec3", "#e4e1d7", "#f4f0e6"] },
       "ink-soft": { "role": "neutral", "displayName": "Marfil suave", "canonical": "#d9d8ce", "tonalRamp": ["#2c2c29", "#55554f", "#7e7d75", "#a4a39a", "#bdbcb3", "#d9d8ce", "#e9e8e0", "#f7f7f2"] },
       "line": { "role": "neutral", "displayName": "Regla translúcida", "canonical": "rgba(244, 240, 230, 0.38)", "tonalRamp": ["rgba(244,240,230,.1)", "rgba(244,240,230,.16)", "rgba(244,240,230,.22)", "rgba(244,240,230,.28)", "rgba(244,240,230,.38)", "rgba(244,240,230,.5)", "rgba(244,240,230,.7)", "rgba(244,240,230,.9)"] }
@@ -15,10 +16,10 @@
     "breakpoints": { "mobile": "440px", "stack": "780px" },
     "narrative": {
       "northStar": "La cartelera olfativa",
-      "overview": "Estela se expresa como una hoja de lineup que se lee desde lejos: una tinta dominante, una tinta de contraste y una jerarquía tipográfica que hace que el producto se entienda antes de adornarlo.",
-      "keyCharacteristics": ["Superficie azul continua con tinta marfil", "Jerarquía por escala y saltos de línea", "Filas editoriales con una variación invertida", "Tipografía y geometría como contenido"],
+      "overview": "Estela se expresa como una hoja de lineup que se lee desde lejos: una tinta dominante, una tinta de contraste, una señal azafrán y una jerarquía tipográfica que hace que el producto se entienda antes de adornarlo.",
+      "keyCharacteristics": ["Superficie azul continua con tinta marfil", "Señal azafrán reservada para prueba y recomendación", "Jerarquía por escala y saltos de línea", "Filas editoriales con una variación invertida", "Tipografía y geometría como contenido"],
       "rules": [
-        { "section": "Colors", "name": "The Two-Ink Rule", "body": "No añadir colores de categoría, degradados ni acentos decorativos." },
+        { "section": "Colors", "name": "The Signal Rule", "body": "El azafrán aparece en regiones con una función clara —prueba, recomendación o trazabilidad—; no se dispersa como confeti decorativo." },
         { "section": "Typography", "name": "The Headline-First Rule", "body": "Los bloques entran por su titular; no usar etiquetas tipo eyebrow antes de una cabeza." },
         { "section": "Elevation & Depth", "name": "The Flat-By-Default Rule", "body": "Una superficie gana jerarquía por tono, tipografía y separación; no por cajas flotantes." }
       ],
